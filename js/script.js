@@ -23,8 +23,13 @@ for (let i = 1 ; i <= 100 ; i++) {
     LiEl.style.width = '150px'
     LiEl.style.fontSize ='20px'
     
+    if ( i % 3 ==0  && i % 5 ==0) {
+        LiEl.innerHTML = "FizzBuzz"
+        // LiEl.classList.add ('bg-danger')
+        LiEl.style.backgroundColor ='#0011ff'
+    } else
 
-    if (i % 3 == 0) {
+     if (i % 3 == 0) {
 
         LiEl.innerHTML = "Fizz"
 
@@ -39,9 +44,9 @@ for (let i = 1 ; i <= 100 ; i++) {
 
             } else {
         
-                LiEl.innerHTML = "FizzBuzz"
+                LiEl.innerHTML = i 
                 // LiEl.classList.add ('bg-danger')
-                LiEl.style.backgroundColor ='#0011ff'
+                LiEl.style.backgroundColor ='yellow'
 
             }
 
